@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Firma de Correo</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .signature-box {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #212835; /* Fondo de color #212835 */
+        color: #fff; /* Texto blanco para contrastar con el fondo oscuro */
+    }
+    .contact-info p {
+        margin: 5px 0;
+    }
+    .logo {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Centrar el logo horizontalmente */
+    }
+    .vertical-line {
+        border-right: 1px solid #fff; /* Línea vertical blanca */
+        height: 100%; /* Asegura que la línea tenga la misma altura que su contenedor */
+    }
+    @media (max-width: 767px) {
+        .vertical-line {
+            border-right: none; /* Eliminar el borde derecho en pantallas pequeñas */
+            border-bottom: 1px solid #fff; /* Agregar una línea horizontal en pantallas pequeñas */
+            height: auto; /* Restaurar la altura automática para la línea horizontal */
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="signature-box">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 text-center vertical-line"> <!-- Añadido vertical-line para la línea vertical -->
+                        <img src="img/Logo.png" alt="Logo de la empresa" class="img-fluid logo"> <!-- Cambiado el tamaño del logo para una mejor apreciación -->
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p><i class="fas fa-building"></i> Instituto Técnico Superior Quito Metropolitano</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Quito - Ecuador</p>
+                        <p><i class="fas fa-envelope"></i> Correo Electrónico: <a href="mailto:jroserog@itsqmet.edu.ec" style="color: #fff;">jroserog@itsqmet.edu.ec</a></p>
+                        <p><i class="fas fa-globe"></i> Sitio Web: <a href="http://www.itsqmet.edu.ec" style="color: #fff;">www.itsqmet.edu.ec</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
